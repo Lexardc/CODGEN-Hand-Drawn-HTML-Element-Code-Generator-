@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 18
+names: ['button', 'checkbox', 'container', 'icon-button', 'image', 'input', 'label', 'link', 'number-input', 'radio', 'search', 'select', 'slider', 'table', 'text', 'textarea', 'textbox', 'toggle']
+
+roboflow:
+  workspace: company-bckjr
+  project: webui-fheoa-github
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/company-bckjr/webui-fheoa-github/dataset/1

@@ -1,0 +1,128 @@
+/* SignupForm.css */
+
+body {
+    background-color: #060607; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 2px;
+  z-index: 999;
+  color: #ffffff;
+}
+
+  .signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#060607 /* Set to transparent as body covers dark background */
+  }
+  
+  .signup-form {
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to left, rgb(1, 100, 107) , rgb(38, 8, 94));
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
+ 
+    border: 10px solid;
+    border-image: linear-gradient(45deg, gold, deeppink) 1;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+  }
+  @keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+  
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5f0f0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff9f9;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  width:40px;
+  right: -21px; /* Adjust this value to change the distance from the right */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* "Already have an account?" section */
+.already-have-account {
+  margin-top: 20px;
+  text-align: center;
+  left:-40px;
+}
+
+.already-have-account p {
+  margin-bottom: 5px;
+}
+
+.already-have-account a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.already-have-account a:hover {
+  text-decoration: underline;
+}
+.error-message{color:red;}
